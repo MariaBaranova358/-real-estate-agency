@@ -1,6 +1,21 @@
-@import "blocks/header.css";
-@import "blocks/slider.css";
+/* Global */
+
 @import "global/container.css";
-@import "blocks/about-company.css";
-@import "blocks/footer.css";
 @import "global/reboot.css";
+
+/* Blocks */
+
+@import "blocks/header.css";
+@import "blocks/footer.css";
+
+/* index.html */
+@import "blocks/slider.css";
+@import "blocks/about-company.css";
+
+
+/* catalog.html */
+@import "blocks/tabs.css";
+@import "blocks/filters.css";
+@import "blocks/property-list.css";
+@import "blocks/pagination.css";
+@import "blocks/tab-content.css";

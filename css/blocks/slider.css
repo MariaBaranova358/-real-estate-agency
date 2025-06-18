@@ -26,7 +26,6 @@
     border-radius: 30px;
 }
 
-/* Кнопки навигации */
 .slider__nav {
     text-align: center;
     margin-top: 10px;
@@ -46,12 +45,10 @@
     background: #333;
 }
 
-/* Показываем только первый слайд */
 .slider__slide:not(:first-child) {
     display: none;
 }
 
-/* Кнопки вперед/назад */
 .slider__arrow {
     position: absolute;
     top: 50%;
