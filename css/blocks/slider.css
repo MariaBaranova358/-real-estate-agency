@@ -1,0 +1,75 @@
+.slider {
+    padding-top: 50px;
+}
+
+.slider__wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider__container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slider__slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slider__slide img {
+    width: 100%;
+    display: block;
+    border-radius: 30px;
+}
+
+/* Кнопки навигации */
+.slider__nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.slider__button {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider__button.active {
+    background: #333;
+}
+
+/* Показываем только первый слайд */
+.slider__slide:not(:first-child) {
+    display: none;
+}
+
+/* Кнопки вперед/назад */
+.slider__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.slider__arrow--prev {
+    left: 10px;
+}
+
+.slider__arrow--next {
+    right: 10px;
+}
