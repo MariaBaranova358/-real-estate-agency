@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АГЕНСТВО НЕДВИЖИМОСТИ - Страница товара</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo-item">
+            <svg class="header__logo" width="50" height="50" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#header-logo"></use>
+            </svg>
+            <span class="header__logo-name">Агенство недвижимости</span>
+        </div>
+        <ul class="header__nav">
+            <li class="header__nav-item"><a href="index.html">Главная</a></li>
+            <li class="header__nav-item"><a href="catalog.html">Католог</a></li>
+            <li class="header__nav-item">О Нас</li>
+        </ul>
+    </header>
+    <main>
+        <div class="container">
+            <section class="gallery-container">
+                <div class="gallery-container__thumbnail">
+                    <img src="images/appartament-1.webp" alt="Квартира вид 1" class="gallery-container__thumbnail-img"
+                        onclick="changeMainImage(this)">
+                    <img src="images/appartament-2.webp" alt="Квартира вид 2" class="gallery-container__thumbnail-img"
+                        onclick="changeMainImage(this)">
+                    <img src="images/appartament-3.webp" alt="Квартира вид 3" class="gallery-container__thumbnail-img"
+                        onclick="changeMainImage(this)">
+                    <img src="images/appartament-4.webp" alt="Квартира вид 4" class="gallery-container__thumbnail-img"
+                        onclick="changeMainImage(this)">
+                    <img src="images/appartament-5.webp" alt="Квартира вид 5" class="gallery-container__thumbnail-img"
+                        onclick="changeMainImage(this)">
+                </div>
+
+                <img src="images/catalog-1.webp" alt="Элитная квартира в центре Москвы"
+                    class="gallery-container__main-image" id="mainImage">
+            </section>
+
+            <section class="product-info">
+                <div class="product-info__details">
+                    <h1 class="product-info__title">2-комнатная квартира в центре</h1>
+                    <span class="product-info__price">5 200 000 ₽</span>
+
+                    <p class="product-info__desc">Просторная и светлая 2-комнатная квартира в самом сердце города станет
+                        отличным выбором для тех, кто ценит комфорт и удобное расположение. Общая площадь 48 м² грамотно
+                        распределена между уютной гостиной, объединенной с современной кухней, и изолированной спальней
+                        с хорошим естественным освещением.
+                    </p>
+
+                    <p class="product-info__desc">В шаговой доступности находятся кафе и рестораны, супермаркеты,
+                        аптеки и банки, а ближайшая станция метро расположена всего в 5 минутах ходьбы. При этом окна
+                        квартиры выходят во двор, что гарантирует тишину и спокойствие, несмотря на центральное
+                        расположение.</p>
+
+                    <h2 class="product-info__title-h2">Описание</h2>
+                    <p class="product-info__desc">Интерьер квартиры продуман до мелочей и включает все необходимое для
+                        комфортной жизни. Кухня оборудована новой техникой и имеет удобную планировку, позволяющую с
+                        комфортом готовить и принимать гости.</p>
+
+                    <p class="product-info__desc">Это предложение представляет собой отличную возможность приобрести
+                        качественное жилье в престижном районе по привлекательной цене. Квартира полностью готова к
+                        проживанию и не требует дополнительных вложений.</p>
+                </div>
+
+                <div class="product-info__features">
+                    <h2>Характеристики</h2>
+                    <ul class="product-info__list">
+                        <li><strong>Площадь:</strong> 65 м²</li>
+                        <li><strong>Этаж:</strong> 3 из 5</li>
+                        <li><strong>Комнат:</strong> 2</li>
+                        <li><strong>Санузлы:</strong> 1</li>
+                        <li><strong>Год постройки:</strong>1990</li>
+                        <li><strong>Отделка:</strong> Дизайнерский ремонт</li>
+                        <li><strong>Высота потолков:</strong> 3.2 м</li>
+                        <li><strong>Балкон/терраса:</strong> Да</li>
+                        <li><strong>Охрана:</strong> Круглосуточная</li>
+                        <li><strong>Инфраструктура:</strong> Фитнес-центр, SPA, консьерж-сервис</li>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="reviews">
+                <h2 class="reviews__title">Отзывы о жилом комплексе</h2>
+                <ul class="reviews__list">
+                    <li class="reviews__item">
+                        <div class="reviews__author">Анна Смирнова</div>
+                        <div class="reviews__date">15 января 2023</div>
+                        <div class="reviews__rating">★★★★★</div>
+                        <p class="reviews__text">Проживаем в комплексе уже год - полный восторг! Отличная звукоизоляция,
+                            прекрасные виды из
+                            окон,
+                            внимательный персонал. Особенно радует наличие фитнес-центра - не нужно тратить время на
+                            дорогу
+                            в
+                            спортзал.</p>
+                    </li>
+
+                    <li class="reviews__item">
+                        <div class="reviews__author">Игорь Петров</div>
+                        <div class="reviews__date">3 ноября 2022</div>
+                        <div class="reviews__rating">★★★★☆</div>
+                        <p class="reviews__text">Качественный жилой комплекс с хорошей инфраструктурой. Немного смущает
+                            плотность застройки
+                            вокруг, но
+                            это
+                            компенсируется отличными видами с верхних этажей. Персонал всегда вежлив и готов помочь.</p>
+                    </li>
+
+                    <li class="reviews__item">
+                        <div class="reviews__author">Елена Козлова</div>
+                        <div class="reviews__date">22 августа 2022</div>
+                        <div class="reviews__rating">★★★★★</div>
+                        <p class="reviews__text">Превосходное место для жизни! Все продумано до мелочей - от системы
+                            безопасности до дизайна
+                            общественных
+                            зон. Соседи все приятные, воспитанные люди. Рекомендую этот комплекс тем, кто ценит комфорт
+                            и
+                            безопасность.</p>
+                    </li>
+                </ul>
+            </div>
+            <section class="review-form">
+                <h3 class="review-form__title">Оставить отзыв</h3>
+                <form id="review-form__form">
+                    <div class="review-form__form-group">
+                        <label class="review-form__field-name" for="reviewName">Ваше имя:</label>
+                        <input type="text" id="reviewName" name="name" required>
+                    </div>
+
+                    <div class="review-form__form-group">
+                        <label class="review-form__field-name" for="reviewEmail">Ваш email:</label>
+                        <input type="email" id="reviewEmail" name="email" required>
+                    </div>
+
+                    <div class="review-form__form-group">
+                        <label class="review-form__field-name">Оценка:</label>
+                        <div class="review-form__rating-select">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5">★</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4">★</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3">★</label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2">★</label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1">★</label>
+                        </div>
+                    </div>
+
+                    <div class="review-form__form-group">
+                        <label class="review-form__field-name" for="reviewText">Ваш отзыв:</label>
+                        <textarea id="reviewText" name="review" required></textarea>
+                    </div>
+
+                    <button class="btn" type="submit">Отправить отзыв</button>
+                </form>
+            </section>
+        </div>
+
+
+
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__about">
+                <div class="footer__logo">Агенство недвижимости</div>
+                <p>Мы помогаем найти ваш идеальный дом с 2010 года. Наши специалисты подберут лучшие варианты
+                    недвижимости по вашему запросу.</p>
+            </div>
+
+            <div class="footer__links">
+                <h3 class="footer__title">Быстрые ссылки</h3>
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__links">
+                <h3 class="footer__title">Категории</h3>
+                <ul>
+                    <li><a href="#">Квартиры</a></li>
+                    <li><a href="#">Дома</a></li>
+                    <li><a href="#">Коммерческая</a></li>
+                    <li><a href="#">Земельные участки</a></li>
+                    <li><a href="#">Элитная недвижимость</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__contact">
+                <h3 class="footer__title">Контакты</h3>
+                <ul class="footer__contacts-list">
+                    <li>г. Владимир, ул. Примерная, 123</li>
+                    <li>+7 (495) 123-45-67</li>
+                    <li> info@nedvigimost.ru</li>
+                    <li>Пн-Пт: 9:00 - 19:00</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p>&copy; 2025 Агенство недвеижемости.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+.review-form {
+    background-color: #39664165;
+    padding: 25px;
+    border-radius: 5px;
+    margin: 30px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review-form__form-group {
+    margin-bottom: 20px;
+}
+
+.review-form__field-name {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.review-form__form-group input[type="text"],
+.review-form__form-group input[type="email"],
+.review-form__form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.review-form__form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.review-form__rating-select {
+    display: flex;
+    gap: 10px;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.review-form__rating-select input[type="radio"] {
+    display: none;
+}
+
+.review-form__rating-select label {
+    cursor: pointer;
+    font-size: 20px;
+    color: #ddd;
+}
+
+.review-form__rating-select input[type="radio"]:checked~label {
+    color: #f39c12;
+}
+
+.review-form__rating-select label:hover,
+.review-form__rating-select label:hover~label {
+    color: #f39c12;
+}

@@ -1,0 +1,35 @@
+.reviews {
+    margin-top: 40px;
+}
+
+.reviews__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.reviews__item {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(162, 162, 162, 0.44);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+        0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.reviews__author {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.reviews__date {
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+.reviews__rating {
+    color: #f39c12;
+    font-weight: bold;
+}
