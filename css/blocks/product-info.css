@@ -4,7 +4,8 @@
      margin-bottom: 40px;
  }
 
- .product-info__title, .product-info__title-h2 {
+ .product-info__title,
+ .product-info__title-h2 {
      color: #1f581d;
  }
 

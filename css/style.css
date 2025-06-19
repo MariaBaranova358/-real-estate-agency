@@ -26,3 +26,8 @@
 @import "blocks/product-info.css";
 @import "blocks/reviews.css";
 @import "blocks/review-form.css";
+
+/* feedback.html */
+@import "blocks/feedback.css";
+@import "blocks/contacts.css";
+@import "blocks/map.css";

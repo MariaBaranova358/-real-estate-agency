@@ -10,32 +10,27 @@
 
 <body>
     <header class="header">
-        <div class="header__logo-item">
-            <svg class="header__logo" width="50" height="50" aria-hidden="true">
+        <a class="header__logo-item" href="index.html"> <svg class="header__logo" width="50" height="50"
+                aria-hidden="true">
                 <use xlink:href="images/sprite.svg#header-logo"></use>
             </svg>
             <span class="header__logo-name">Агенство недвижимости</span>
-        </div>
+        </a>
         <ul class="header__nav">
-            <li class="header__nav-item"><a href="index.html">Главная</a></li>
-            <li class="header__nav-item"><a href="catalog.html">Католог</a></li>
-            <li class="header__nav-item">О Нас</li>
+            <li class="header__nav-item"><a class="header__nav-link" href="index.html">Главная</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="catalog.html">Католог</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="feedback.html">Контакты</a></li>
         </ul>
     </header>
     <main>
         <div class="container">
             <section class="gallery-container">
                 <div class="gallery-container__thumbnail">
-                    <img src="images/appartament-1.webp" alt="Квартира вид 1" class="gallery-container__thumbnail-img"
-                        onclick="changeMainImage(this)">
-                    <img src="images/appartament-2.webp" alt="Квартира вид 2" class="gallery-container__thumbnail-img"
-                        onclick="changeMainImage(this)">
-                    <img src="images/appartament-3.webp" alt="Квартира вид 3" class="gallery-container__thumbnail-img"
-                        onclick="changeMainImage(this)">
-                    <img src="images/appartament-4.webp" alt="Квартира вид 4" class="gallery-container__thumbnail-img"
-                        onclick="changeMainImage(this)">
-                    <img src="images/appartament-5.webp" alt="Квартира вид 5" class="gallery-container__thumbnail-img"
-                        onclick="changeMainImage(this)">
+                    <img src="images/appartament-1.webp" alt="Квартира вид 1" class="gallery-container__thumbnail-img">
+                    <img src="images/appartament-2.webp" alt="Квартира вид 2" class="gallery-container__thumbnail-img">
+                    <img src="images/appartament-3.webp" alt="Квартира вид 3" class="gallery-container__thumbnail-img">
+                    <img src="images/appartament-4.webp" alt="Квартира вид 4" class="gallery-container__thumbnail-img">
+                    <img src="images/appartament-5.webp" alt="Квартира вид 5" class="gallery-container__thumbnail-img">
                 </div>
 
                 <img src="images/catalog-1.webp" alt="Элитная квартира в центре Москвы"
