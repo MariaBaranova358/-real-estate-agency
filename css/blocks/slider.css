@@ -45,10 +45,6 @@
     background: #333;
 }
 
-.slider__slide:not(:first-child) {
-    display: none;
-}
-
 .slider__arrow {
     position: absolute;
     top: 50%;
