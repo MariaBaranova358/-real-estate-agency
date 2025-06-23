@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>АГЕНСТВО НЕДВИЖИМОСТИ - Каталог</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/catalog.js"></script>
 </head>
 
 <body>
@@ -37,52 +38,6 @@
                     <div class="filters__search">
                         <input class="filters__search-input" type="text"
                             placeholder="Поиск по адресу, району или характеристикам...">
-                    </div>
-
-                    <div class="filters__row">
-                        <div class="filter">
-                            <label class="filter__label" for="district-sale">Район:</label>
-                            <select class="filter__select" id="district-sale">
-                                <option value="all">Все районы</option>
-                                <option value="center">Центр</option>
-                                <option value="north">Север</option>
-                                <option value="south">Юг</option>
-                                <option value="east">Восток</option>
-                                <option value="west">Запад</option>
-                                <option value="suburb">Пригород</option>
-                            </select>
-                        </div>
-
-                        <div class="filter">
-                            <label class="filter__label" for="type-sale">Тип:</label>
-                            <select class="filter__select" id="type-sale">
-                                <option value="all">Все типы</option>
-                                <option value="apartment">Квартира</option>
-                                <option value="house">Дом</option>
-                                <option value="commercial">Коммерческая</option>
-                            </select>
-                        </div>
-
-                        <div class="filter">
-                            <label class="filter__label" for="rooms-sale">Комнат:</label>
-                            <select class="filter__select" id="rooms-sale">
-                                <option value="all">Любое</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4+</option>
-                            </select>
-                        </div>
-
-                        <div class="filter">
-                            <label class="filter__label" for="price-min-sale">Цена от:</label>
-                            <input class="filter__input" type="number" id="price-min-sale" placeholder="мин">
-                        </div>
-
-                        <div class="filter">
-                            <label class="filter__label" for="price-max-sale">до:</label>
-                            <input class="filter__input" type="number" id="price-max-sale" placeholder="макс">
-                        </div>
                     </div>
 
                     <div class="filters__sort">
@@ -161,6 +116,25 @@
                                 <a class="property-card__link" href="product-page.html">Подробнее</a>
                             </div>
                         </li>
+                        <li class="property-card" data-price="9800000" data-area="150" data-rooms="3" data-type="house"
+                            data-district="suburb">
+                            <div class="property-card__type">Продажа</div>
+                            <div class="property-card__image" style="background-image: url('images/catalog-7.jpg');">
+                            </div>
+                            <div class="property-card__info">
+                                <h3 class="property-card__title">Кирпичный дом в пригороде</h3>
+                                <div class="property-card__price">9 800 000 ₽</div>
+                                <div class="property-card__meta">
+                                    <span class="property-card__meta-item">Площадь: 150 м²</span>
+                                    <span class="property-card__meta-item">Участок: 6 соток</span>
+                                </div>
+                                <p class="property-card__description">
+                                    Просторный дом с камином и террасой. 3 спальни, кухня-столовая, 2 санузла.
+                                    Гараж на 1 машину, летняя кухня. Все коммуникации центральные. 15 минут до города.
+                                </p>
+                                <a class="property-card__link" href="product-page.html">Подробнее</a>
+                            </div>
+                        </li>
                     </ul>
                 </section>
 
@@ -180,50 +154,6 @@
                     <div class="filters__search">
                         <input class="filters__search-input" type="text"
                             placeholder="Поиск по адресу, району или характеристикам...">
-                    </div>
-
-                    <div class="filters__row">
-                        <div class="filter">
-                            <label class="filter__label" for="district-rent">Район:</label>
-                            <select class="filter__select" id="district-rent">
-                                <option value="all">Все районы</option>
-                                <option value="center">Центр</option>
-                                <option value="north">Север</option>
-                                <option value="south">Юг</option>
-                                <option value="east">Восток</option>
-                                <option value="west">Запад</option>
-                            </select>
-                        </div>
-
-                        <div class="filter">
-                            <label class="filter__label" for="type-rent">Тип:</label>
-                            <select class="filter__select" id="type-rent">
-                                <option value="all">Все типы</option>
-                                <option value="apartment">Квартира</option>
-                                <option value="room">Комната</option>
-                                <option value="house">Дом</option>
-                            </select>
-                        </div>
-
-                        <div class="filter">
-                            <label class="filter__label" for="rooms-rent">Комнат:</label>
-                            <select class="filter__select" id="rooms-rent">
-                                <option value="all">Любое</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                        </div>
-
-                        <div class="filter">
-                            <label class="filter__label" for="price-min-rent">Цена от:</label>
-                            <input class="filter__input" type="number" id="price-min-rent" placeholder="мин">
-                        </div>
-
-                        <div class="filter">
-                            <label class="filter__label" for="price-max-rent">до:</label>
-                            <input class="filter__input" type="number" id="price-max-rent" placeholder="макс">
-                        </div>
                     </div>
 
                     <div class="filters__sort">
@@ -254,7 +184,7 @@
                                     Уютная квартира с мебелью и техникой. Идеально для одного человека или пары.
                                     Ремонт 2022 года. Окна во двор. Без залога.
                                 </p>
-                                <button class="property-card__btn">Подробнее</button>
+                                <a class="property-card__link" href="product-page.html">Подробнее</a>
                             </div>
                         </li>
 
@@ -275,7 +205,7 @@
                                     Светлая квартира с ремонтом. Вся необходимая мебель и техника. Долгосрочная аренда.
                                     Залог 2 месяца. Дети и животные разрешены.
                                 </p>
-                                <button class="property-card__btn">Подробнее</button>
+                                <a class="property-card__link" href="product-page.html">Подробнее</a>
                             </div>
                         </li>
 
@@ -296,7 +226,26 @@
                                     Чистая комната в квартире с двумя соседями. Общая кухня и санузел.
                                     Мебель в комнате: кровать, шкаф, стол. Интернет включен в стоимость.
                                 </p>
-                                <button class="property-card__btn">Подробнее</button>
+                                <a class="property-card__link" href="product-page.html">Подробнее</a>
+                            </div>
+                        </li>
+                        <li class="property-card" data-price="35000" data-area="55" data-rooms="2" data-type="apartment"
+                            data-district="west">
+                            <div class="property-card__type">Аренда</div>
+                            <div class="property-card__image" style="background-image: url('images/catalog-8.png');">
+                            </div>
+                            <div class="property-card__info">
+                                <h3 class="property-card__title">2-комнатная квартира</h3>
+                                <div class="property-card__price">35 000 ₽/мес</div>
+                                <div class="property-card__meta">
+                                    <span class="property-card__meta-item">Площадь: 55 м²</span>
+                                    <span class="property-card__meta-item">Этаж: 3/5</span>
+                                </div>
+                                <p class="property-card__description">
+                                    Уютная квартира с ремонтом в тихом районе. Вся необходимая мебель и техника.
+                                    Долгосрочная аренда. Залог 1 месяц. Дети разрешены, животные - по согласованию.
+                                </p>
+                                 <a class="property-card__link" href="product-page.html">Подробнее</a>
                             </div>
                         </li>
                     </ul>
