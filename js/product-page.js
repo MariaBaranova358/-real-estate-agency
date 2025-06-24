@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <div class="reviews__rating">${renderStars(review.rating)}</div>
             <p class="reviews__text">${review.text}</p>
         `;
-        reviewsList.prepend(li);
+        reviewsList.append(li);
     }
 
     // Отображаем все отзывы

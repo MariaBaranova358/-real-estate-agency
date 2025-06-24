@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>АГЕНСТВО НЕДВИЖИМОСТИ - Обратная связь</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/feedback.js"></script>
 </head>
 
 <body>
@@ -26,26 +27,28 @@
         <div class="container">
             <section class="feedback">
                 <h2 class="feedback__title">Форма обратной связи</h2>
-                <form class="feedback__form" action="#" method="POST">
+                <form class="feedback__form" action="#" method="POST" id="feedbackForm">
                     <div class="feedback__form-group">
                         <label class="feedback__field-name" for="name">Ваше имя:</label>
-                        <input class="feedback__input-field" type="text" id="name" name="name" required>
+                        <input class="feedback__input-field" type="text" id="name" name="name">
+                        <span id="nameError" class="feedback__error"></span>
                     </div>
 
                     <div class="feedback__form-group">
                         <label class="feedback__field-name" for="email">Электронная почта:</label>
-                        <input class="feedback__input-field" type="email" id="email" name="email" required>
+                        <input class="feedback__input-field" type="email" id="email" name="email">
+                        <span id="emailError" class="feedback__error"></span>
                     </div>
 
                     <div class="feedback__form-group">
                         <label class="feedback__field-name" for="message">Ваше сообщение:</label>
-                        <textarea class="feedback__text-field" id="message" name="message" required></textarea>
+                        <textarea class="feedback__text-field" id="message" name="message"></textarea>
+                        <span id="messageError" class="feedback__error"></span>
                     </div>
 
                     <button class="btn" type="submit">Отправить сообщение</button>
                 </form>
             </section>
-
             <section class="contacts">
                 <h2 class="contacts__title">Наши контакты</h2>
                 <div class="contacts__info">
@@ -83,7 +86,15 @@
             <section class="map">
                 <h2 class="map__title">Как нас найти</h2>
                 <div class="map__inner">
-                    <img class="map__img" src="images/maps.png" alt="Карта расположения офиса агества недвижимости">
+                    <div style="position:relative;overflow:hidden;"><a
+                            href="https://yandex.ru/maps/192/vladimir/search/%D0%90%D0%B3%D0%B5%D0%BD%D1%82%D1%81%D1%82%D0%B2%D0%BE%20%D0%BD%D0%B5%D0%B4%D0%B2%D0%B8%D0%B6%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8/?utm_medium=mapframe&utm_source=maps"
+                            style="color:#eee;font-size:12px;position:absolute;top:0px;">Агентство недвижимости во
+                            Владимире</a><a
+                            href="https://yandex.ru/maps/192/vladimir/?utm_medium=mapframe&utm_source=maps"
+                            style="color:#eee;font-size:12px;position:absolute;top:14px;">Владимир</a><iframe
+                            src="https://yandex.ru/map-widget/v1/?display-text=%D0%90%D0%B3%D0%B5%D0%BD%D1%82%D1%81%D1%82%D0%B2%D0%BE%20%D0%BD%D0%B5%D0%B4%D0%B2%D0%B8%D0%B6%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8&ll=40.378104%2C56.150153&mode=search&sll=40.378320%2C56.150276&sspn=0.001798%2C0.000612&text=%7B%22text%22%3A%22%D0%90%D0%B3%D0%B5%D0%BD%D1%82%D1%81%D1%82%D0%B2%D0%BE%20%D0%BD%D0%B5%D0%B4%D0%B2%D0%B8%D0%B6%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8%22%2C%22what%22%3A%5B%7B%22attr_name%22%3A%22category_id%22%2C%22attr_values%22%3A%5B%22184107503%22%5D%7D%5D%7D&whatshere%5Bpoint%5D=40.377912%2C56.150019&whatshere%5Bzoom%5D=17&z=16.64"
+                            width="560" height="400" frameborder="1" allowfullscreen="true"
+                            style="position:relative;"></iframe></div>
                     <p class="map__desc">Наш офис находится во Владимире, в 5 минутах ходьбы от остановки ул.Гастелло.
                     </p>
                 </div>
