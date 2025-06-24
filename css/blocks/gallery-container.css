@@ -19,8 +19,13 @@
     border: 2px solid #ddd;
 }
 
-.thumbnail:hover {
-    border-color: #3498db;
+.gallery-container__thumbnail-img:hover {
+    border-color: #ff6b6b;
+    /* Цвет рамки при наведении (можно изменить) */
+    box-shadow: 0 0 8px rgba(255, 107, 107, 0.5);
+    /* Дополнительная тень для красоты */
+    transform: scale(1.02);
+    /* Легкое увеличение при наведении (опционально) */
 }
 
 .gallery-container__main-image {

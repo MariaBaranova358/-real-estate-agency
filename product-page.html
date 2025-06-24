@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>АГЕНСТВО НЕДВИЖИМОСТИ - Страница товара</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/product-page.js"></script>
 </head>
 
 <body>
@@ -26,15 +27,16 @@
         <div class="container">
             <section class="gallery-container">
                 <div class="gallery-container__thumbnail">
-                    <img src="images/appartament-1.webp" alt="Квартира вид 1" class="gallery-container__thumbnail-img">
-                    <img src="images/appartament-2.webp" alt="Квартира вид 2" class="gallery-container__thumbnail-img">
-                    <img src="images/appartament-3.webp" alt="Квартира вид 3" class="gallery-container__thumbnail-img">
-                    <img src="images/appartament-4.webp" alt="Квартира вид 4" class="gallery-container__thumbnail-img">
-                    <img src="images/appartament-5.webp" alt="Квартира вид 5" class="gallery-container__thumbnail-img">
+                    <img src="images/appartament-1.png" alt="Квартира вид 1" class="gallery-container__thumbnail-img">
+                    <img src="images/appartament-2.png" alt="Квартира вид 2" class="gallery-container__thumbnail-img">
+                    <img src="images/apprtament-3.png" alt="Квартира вид 3" class="gallery-container__thumbnail-img">
+                    <img src="images/appartament-4.png" alt="Квартира вид 4" class="gallery-container__thumbnail-img">
+                    <img src="images/appartament-5.png" alt="Квартира вид 5" class="gallery-container__thumbnail-img">
                 </div>
 
-                <img src="images/catalog-1.webp" alt="Элитная квартира в центре Москвы"
-                    class="gallery-container__main-image" id="mainImage">
+                <!-- Основное изображение (изначально = первой миниатюре) -->
+                <img src="images/appartament-1.png" alt="Квартира вид 1" class="gallery-container__main-image"
+                    id="mainImage">
             </section>
 
             <section class="product-info">
@@ -82,7 +84,7 @@
 
             <div class="reviews">
                 <h2 class="reviews__title">Отзывы о жилом комплексе</h2>
-                <ul class="reviews__list">
+                <ul class="reviews__list" id="reviewsList">
                     <li class="reviews__item">
                         <div class="reviews__author">Анна Смирнова</div>
                         <div class="reviews__date">15 января 2023</div>
@@ -120,17 +122,12 @@
                     </li>
                 </ul>
             </div>
-            <section class="review-form">
+            <section class="review-form" id="reviewForm">
                 <h3 class="review-form__title">Оставить отзыв</h3>
                 <form id="review-form__form">
                     <div class="review-form__form-group">
                         <label class="review-form__field-name" for="reviewName">Ваше имя:</label>
                         <input type="text" id="reviewName" name="name" required>
-                    </div>
-
-                    <div class="review-form__form-group">
-                        <label class="review-form__field-name" for="reviewEmail">Ваш email:</label>
-                        <input type="email" id="reviewEmail" name="email" required>
                     </div>
 
                     <div class="review-form__form-group">

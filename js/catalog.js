@@ -83,7 +83,7 @@ function initTab(tabSelector) {
         }
     }
 
-    // Отрисовка карточек по текущей странице
+    // Отрисовка карточек на текущей странице
     function renderCards() {
         if (!propertyList) return;
 
